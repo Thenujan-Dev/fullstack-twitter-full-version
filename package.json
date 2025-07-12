@@ -1,0 +1,43 @@
+{
+  "name": "x-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@hookform/resolvers": "^5.1.1",
+    "@mui/material": "^7.1.2",
+    "@prisma/client": "^6.10.1",
+    "@tanstack/react-query": "^5.80.10",
+    "@tanstack/react-query-devtools": "^5.80.10",
+    "argon2": "^0.43.0",
+    "axios": "^1.10.0",
+    "cloudinary": "^2.7.0",
+    "jose": "^6.0.11",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.3.3",
+    "prisma": "^6.10.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.58.1",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwind-scrollbar": "^4.0.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
