@@ -9,6 +9,7 @@ export const GET = async () => {
       const currentUserId = user.id;
       const allusersNotLoggedUser = await prisma.user.findMany({
         where: { id: { not: currentUserId } },
+        select: { id: true, profilePic: true, fullname: true, username: true },
       });
       const lggedUser = await prisma.user.findUnique({
         where: { id: currentUserId },
@@ -17,7 +18,10 @@ export const GET = async () => {
       const suggestedUsers = allusersNotLoggedUser.filter(
         (user) => !currentUserFollowingIds?.includes(user.id)
       );
-      return NextResponse.json({ suggestedUsers });
+      return NextResponse.json(
+        { success: true, suggestedUsers },
+        { status: 200 }
+      );
     });
   } catch (error) {
     return handleError({

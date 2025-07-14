@@ -25,4 +25,4 @@ const userRegisterSchema = z
   });
 
 export default userRegisterSchema;
-export type userREgisterResponse = z.infer<typeof userRegisterSchema>;
+export type userRegisterResponse = z.infer<typeof userRegisterSchema>;
